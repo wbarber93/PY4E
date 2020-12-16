@@ -1,0 +1,35 @@
+-- EXECUTING ALL IN 'SQL 1'
+--
+-- At line 1:
+CREATE TABLE Ages ( 
+  name VARCHAR(128), 
+  age INTEGER
+)
+-- Result: query executed successfully. Took 0ms
+-- EXECUTING ALL IN 'SQL 1'
+--
+-- At line 1:
+DELETE FROM Ages
+-- Result: query executed successfully. Took 0ms, 0 rows affected
+-- EXECUTING ALL IN 'SQL 1'
+--
+-- At line 1:
+INSERT INTO Ages (name, age) VALUES ('Rosalin', 32);
+-- Result: query executed successfully. Took 1ms, 1 rows affected
+-- At line 2:
+INSERT INTO Ages (name, age) VALUES ('Filip', 27);
+-- Result: query executed successfully. Took 0ms, 1 rows affected
+-- At line 3:
+INSERT INTO Ages (name, age) VALUES ('Taylor', 32);
+-- Result: query executed successfully. Took 0ms, 1 rows affected
+-- At line 4:
+INSERT INTO Ages (name, age) VALUES ('Aanya', 23);
+-- Result: query executed successfully. Took 0ms, 1 rows affected
+-- At line 5:
+INSERT INTO Ages (name, age) VALUES ('Tony', 21);
+-- Result: query executed successfully. Took 0ms, 1 rows affected
+-- EXECUTING ALL IN 'SQL 1'
+--
+-- At line 1:
+SELECT hex(name || age) AS X FROM Ages ORDER BY X
+-- Result: 5 rows returned in 21ms
